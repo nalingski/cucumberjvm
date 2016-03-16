@@ -7,7 +7,7 @@ import nz.co.assurity.pages.HomePage;
 /**
  * This is a <Description>.
  *
- * @author: Nalin Goonawardana
+ * @author: Assurity
  * Date: 1/17/16
  * Time: 7:32 PM
  * To change this template use File | Settings | Editor |File and code Templates.
@@ -25,10 +25,9 @@ public class CheckoutUtil {
 
     }
 
-    public static HomePage openHomePage() {
+    public static HomePage openHomePage() throws InterruptedException {
         HomePage hp = new HomePage();
         return hp.navigateTo();
-
 
     }
 }

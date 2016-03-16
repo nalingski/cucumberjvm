@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * This is a <Description>.
  *
- * @author: Nalin Goonawardana
+ * @author: Assurity
  * Date: 1/17/16
  * Time: 6:29 PM
  * To change this template use File | Settings | Editor |File and code Templates.
@@ -34,15 +34,16 @@ public class TeaCategoriesPage extends HomePage {
         return btn_RedTea;
     }
 
-    public CheckoutPage clickBtn_RedTea() {
+    public CheckoutPage clickBtn_RedTea() throws InterruptedException {
         getBtn_RedTea().click();
+        Thread.sleep(2000);
         CheckoutPage cop = new CheckoutPage(driver);
         PageFactory.initElements(driver, cop);
         return cop;
     }
 
 
-    public TeaCategoriesPage navigateTo() {
+    public TeaCategoriesPage navigateTo() throws InterruptedException {
         return super.navigateTo().clickLink_Menu();
     }
 

@@ -14,7 +14,7 @@ import org.junit.Assert;
 /**
  * This is a <Description>.
  *
- * @author: Nalin Goonawardana
+ * @author: Assurity
  * Date: 1/17/16
  * Time: 8:02 PM
  * To change this template use File | Settings | Editor |File and code Templates.
@@ -26,27 +26,19 @@ public class TeaStepDef {
 
     @Given("^Precondition one$")
     public void precondition_one() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-//        throw new PendingException();
     }
 
     @Given("^Precondition two$")
     public void precondition_two() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-//        throw new PendingException();
     }
 
     @When("^I open Passion Tea URL$")
     public void i_open_passion_Tea_UR() throws Throwable {
         hp = CheckoutUtil.openHomePage();
-        // Write code here that turns the phrase above into concrete actions
-//        throw new PendingException();
     }
 
     @Then("^I should land at the Home page$")
     public void i_should_land_at_the_Home_page() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-//        throw new PendingException();
         Assert.assertEquals("Welcome", hp.getDriver().getTitle());
     }
 
@@ -67,34 +59,30 @@ public class TeaStepDef {
     }
 
     @When("^I enter name \"([^\"]*)\" in the Name field$")
-    public void i_enter_name_in_the_Name_field(String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void i_enter_name_in_the_Name_field(String name) throws Throwable {
+        cop.type_Txt_name(name);
     }
 
     @When("^I enter address \"([^\"]*)\" in the Address field$")
-    public void i_enter_address_in_the_Address_field(String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void i_enter_address_in_the_Address_field(String address) throws Throwable {
+        cop.type_Txt_address(address);
     }
 
     @When("^I enter the email \"([^\"]*)\" in the email field\\.$")
-    public void i_enter_the_email_in_the_email_field(String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void i_enter_the_email_in_the_email_field(String email) throws Throwable {
+        cop.type_Txt_email(email);
     }
 
     @When("^I click submit Button$")
     public void i_click_submit_Button() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        tcp = cop.click_Btn_Submit();
     }
 
-    @Then("^I should successfully navigate to Home page\\.$")
-    public void i_should_successfully_navigate_to_Home_page() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
+    @Then("^I should successfully navigate to Menu page$")
+    public void i_should_successfully_navigate_to_Menu_page() throws Throwable {
+
+        Assert.assertEquals("Menu", tcp.getDriver().getTitle());
+     }
 
     @After
     public void closeBrowser() {

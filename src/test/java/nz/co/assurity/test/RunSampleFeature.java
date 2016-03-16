@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 /**
  * A sample runner class
  *
- * @author: Nalin Goonawardana
+ * @author: Assurity
  * Date: 1/17/16
  * Time: 3:46 PM
  * To change this template use File | Settings | Editor |File and code Templates.
@@ -18,7 +18,8 @@ import org.junit.runner.RunWith;
 //    name = {"^Save"},
 //    tags = { "@questionLibrary", "@addingCategory" },
         format = {"html:target/cucumber-html-report", "pretty:target/cucumber-json-report.json"},
-        strict = true
+        strict = true,
+        features = "classpath:nz\\co\\assurity\\test\\Sample.feature"
 )
 public class RunSampleFeature {
 

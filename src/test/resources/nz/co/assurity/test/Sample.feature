@@ -24,4 +24,4 @@ Feature: Purchase Tea
     And I enter address "AddressOne" in the Address field
     And I enter the email "test@assurity.co.nz" in the email field.
     And I click submit Button
-    Then I should successfully navigate to Home page.
+    Then I should successfully navigate to Menu page

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 /**
  * This holds file operation utilities.
  *
- * @author: Nalin Goonawardana
+ * @author: Assurity
  * Date: 2/17/16
  * Time: 3:46 PM
  * To change this template use File | Settings | Editor |File and code Templates.
@@ -51,39 +51,6 @@ public class FileUtility {
         return exist;
     }
 
-    /**
-     * This will verify two files exists
-     *
-     * @param filePath
-     * @param fileName
-     * @return
-     * @throws Exception
-     */
-    public static boolean isTwoFileExist(String filePath, String fileName) {
-        boolean exist = false;
-        File dir = new File(filePath);
-        File[] files = dir.listFiles();
-        int count = 0;
-
-        if (files == null || files.length == 0) {
-            System.out.println("Can't find any files in the current directory");
-        } else {
-            for (int i = 0; i < files.length; i++) {
-                // Get filename of file or directory
-                String filename = files[i].getName();
-
-                if (filename.contains(fileName.substring(0, 29))) {
-                    count++;
-                }
-
-
-            }
-
-            if (count == 2)
-                exist = true;
-        }
-        return exist;
-    }
 
     /**
      * This will delete a given file.

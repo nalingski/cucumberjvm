@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * This is the demo site's Home page page object.
  *
- * @author: Nalin Goonawardana
+ * @author: Assurity
  * Date: 1/17/16
  * Time: 6:27 PM
  * To change this template use File | Settings | Editor |File and code Templates.
@@ -70,7 +70,7 @@ public class HomePage {
         return tcp;
     }
 
-    public HomePage navigateTo() {
+    public HomePage navigateTo() throws InterruptedException {
 
 
         driver.get(baseUrl);

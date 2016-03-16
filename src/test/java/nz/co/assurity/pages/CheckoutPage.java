@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 /**
  * This is a <Description>.
  *
- * @author: Nalin Goonawardana
+ * @author: Assurity
  * Date: 1/17/16
  * Time: 6:30 PM
  * To change this template use File | Settings | Editor |File and code Templates.
@@ -85,14 +85,14 @@ public class CheckoutPage extends TeaCategoriesPage {
         return btn_Submit;
     }
 
-    public HomePage click_Btn_Submit() {
+    public TeaCategoriesPage click_Btn_Submit() {
         getBtn_Submit().click();
-        HomePage hp = new HomePage(driver);
-        PageFactory.initElements(driver, hp);
-        return hp;
+        TeaCategoriesPage cp = new TeaCategoriesPage(driver);
+        PageFactory.initElements(driver, cp);
+        return cp;
     }
 
-    public CheckoutPage navigateTo() {
+    public CheckoutPage navigateTo() throws InterruptedException {
         return super.navigateTo().clickBtn_RedTea();
     }
 
