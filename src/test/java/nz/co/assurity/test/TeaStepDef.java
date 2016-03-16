@@ -1,6 +1,5 @@
 package nz.co.assurity.test;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -82,7 +81,7 @@ public class TeaStepDef {
     public void i_should_successfully_navigate_to_Menu_page() throws Throwable {
 
         Assert.assertEquals("Menu", tcp.getDriver().getTitle());
-     }
+    }
 
     @After
     public void closeBrowser() {

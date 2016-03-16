@@ -13,7 +13,6 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @cucumber.api.CucumberOptions(
-//    Enable one of these to run just some tests. Put regexp to match features in here.
 //    name = {"^Preview"},
 //    name = {"^Save"},
 //    tags = { "@questionLibrary", "@addingCategory" },

@@ -3,7 +3,6 @@ Feature: Purchase Tea
   As a Customer I need to purchase different tea types.
 #  UseCase 2
 #  UseCase 3
-  #These scenarios are not good example scenarios but used just to demonstrate the framework.
 
   Background:
     Given Precondition one
@@ -18,7 +17,7 @@ Feature: Purchase Tea
     When I click on the Red Tea checkout link
     Then I should navigate to Checkout page
 
-  Scenario: Checkout a tea type
+  Scenario: Checkout
     Given I open the tea Categories Page
     When I click on the Red Tea checkout link
     And I enter name "UserOne" in the Name field

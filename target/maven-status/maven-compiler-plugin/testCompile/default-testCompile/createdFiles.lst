@@ -1,0 +1,8 @@
+nz\co\assurity\common\FileUtility.class
+nz\co\assurity\model\TeaCustomer.class
+nz\co\assurity\pages\HomePage.class
+nz\co\assurity\pages\CheckoutPage.class
+nz\co\assurity\test\RunSampleFeature.class
+nz\co\assurity\test\TeaStepDef.class
+nz\co\assurity\pages\TeaCategoriesPage.class
+nz\co\assurity\bp\CheckoutUtil.class
